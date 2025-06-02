@@ -70,7 +70,7 @@ def get_prices():
             if coin_id in data:
                 price = data[coin_id]["usd"]
                 change = data[coin_id].get("usd_24h_change", 0)
-                emoji = "РОСТ" if change > 0 else "ПАДЕНИЕ" if change < 0 else "⚪ "
+                emoji = "🟢" if change > 0 else "🔴 " if change < 0 else "⚪ "
                 lines.append(f"{emoji} *{symbol}*: ${price:,.4f} ({change:+.2f}%)")
         print("Prices retrieved successfully.")
         return lines
