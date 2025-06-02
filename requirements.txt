@@ -1,4 +1,6 @@
-requests
 openai
-python-telegram-bot==13.15
+requests
 apscheduler
+telegram
+python-telegram-bot==13.15
+pytz
